@@ -21,6 +21,20 @@ namespace BusinessDiary.Data
 
         IDbSet<Import> Imports { get; set; }
 
+        IDbSet<Product> Products { get; set; }
+
+        IDbSet<Center> Centers { get; set; }
+
+        IDbSet<ProductsCenters> ProductsCenters { get; set; }
+
+        IDbSet<SalesPerDay> SalesPerDay { get; set; }
+
+        IDbSet<SalesPerProduct> SalesPerProduct { get; set; }
+
+        IDbSet<RevenuesPerDay> RevenuesPerDay { get; set; }
+
+        IDbSet<RevenuesPerProduct> RevenuesPerProduct { get; set; }
+             
         public static BusinessDiaryDbContext Create()
         {
             return new BusinessDiaryDbContext();

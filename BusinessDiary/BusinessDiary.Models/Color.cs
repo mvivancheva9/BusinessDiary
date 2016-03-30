@@ -1,15 +1,17 @@
-﻿namespace BusinessDiary.Models
-{
-    using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-    public class Company
+namespace BusinessDiary.Models
+{
+    public class Color
     {
-        private ICollection<Import> imports;
         private ICollection<Product> products;
 
-        public Company()
+        public Color()
         {
-            this.imports = new HashSet<Import>();
             this.products = new HashSet<Product>();
         }
 
@@ -17,7 +19,7 @@
 
         public string Name { get; set; }
 
-        public virtual ICollection<Import> Imports { get; set; }
+        public int Code { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
     }
