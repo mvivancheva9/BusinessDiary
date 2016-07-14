@@ -23,8 +23,6 @@ namespace BusinessDiary.Web
 
             var autoMapperConfig = new AutoMapperConfig();
             autoMapperConfig.Execute(Assembly.GetExecutingAssembly());
-	    
-            var a = 5;
         }
     }
 }
